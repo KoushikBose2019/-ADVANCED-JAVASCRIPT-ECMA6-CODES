@@ -1,0 +1,177 @@
+<script>
+/*let user={};
+alert(user.noSuchProperty===undefined);*/
+/*let user={name:"koushik",age:30}
+let a=prompt("please enter a valid key and value ?")
+alert("age"in user);
+alert("hi" in user);*/
+/*let user={age:29};
+let key="age";
+alert(key in user);*/
+/*let obj={
+	test:undefined
+};
+alert(obj.test);
+alert("test" in obj );*/
+/*let user={
+	name:"koushik",
+	age:30,
+	isAdmin:true
+};
+for(let key in user){
+	//keys
+	alert(key);
+	alert(user[key]);
+}*/
+/*let customer={
+    name:"tony",
+    age:27,
+    product :"consumer goods"
+};
+for(let key in customer){
+	//alert(key);
+	alert(customer[key]);
+}*/
+/*let codes={
+	"49":"germany",
+	"41":"swizerland",
+	"44":"great britain",
+	"1":"usa"
+};
+
+for(let key in codes){
+	//alert(codes);
+	alert(codes[key]);
+
+}*/
+/*alert(String(Math.trunc(Number("45"))));
+alert(String(Math.trunc(Number("+55"))));
+alert(String(Math.trunc(Number("1.2"))));*/
+/*let user={
+	name:"arnok",
+	surname:"gosh"
+};
+user.age=25;
+for(let key in user){
+	alert(key);
+	alert(user[key]);
+}*/
+/*let code={
+	"+49":"germany",
+	"+41":"swizerland",
+	"+44":"great britain",
+
+"+1":"usa"
+};
+for(let key in code){
+	alert(code[key]);
+}*/
+/*let message="hello!";
+let pharse=message;*/
+/*let user={
+	name:"john"
+};*/
+/*let user={name:"koushik"};
+let admin=user;
+alert(admin);*/
+/*let user={name:"koushik"};
+let admin=user;
+//alert(admin.name);
+admin.name="john";
+alert(user.name);*/
+/*let a={};
+let b=a;
+alert(a==b);
+alert(a===b);*/
+/*let a={};
+let b={};
+alert(a==b);*/
+/*	name:"koushik"
+};
+user.age=24;
+alert(user.age);*/
+/*const user={
+	name:"koushik"
+};
+user={
+	name:"tony"
+};
+alert(user.name);*/
+/*let user={
+	name:"koushik",
+	age:28,
+	technology:"javascript",
+	company:"cognizant"
+};
+let clone={};
+for(let key in user){
+	clone[key]=user[key];
+	alert(user[key]);
+}
+clone.name="john";
+clone.technology="python";
+alert(clone.name);
+alert(clone.technology);*/
+/*let user={name:"koushik"};
+let permission1={canView:true};
+let permission2={canView:false};
+//copies all the property from permission1 and permission2
+Object.assign(user,permission1,permission2);*/
+/*let user = { name: "John" };
+
+// overwrite name, add isAdmin
+Object.assign(user, { name: "Pete", isAdmin: true });
+alert(user.name);*/
+/*let user={
+	name:"koushik",
+	age:29
+};
+let clone=Object.assign(user,{technology:"node.js"});
+alert(clone.name);
+alert(clone.age);
+alert(clone.technology);*/
+/*let user={
+	name:"koushik",
+	size:{
+		height:182,
+		width:55
+	}
+};
+alert(user.size.height);*/
+let user={
+	name:"koushik",
+	size:{
+		height:184,
+		width:55	
+	}
+};
+let clone=Object.assign(user,{});
+alert(user.size===clone.size);
+user.size.width++;
+alert(clone.size.width);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
