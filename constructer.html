@@ -1,0 +1,77 @@
+<script>
+/*function user(name,age){
+	this.name=name;
+	this.age=age;
+	this.isAdmin="false";
+}
+let user=new user("koushik");
+let user=new user(29);
+alert(user.name);
+alert(user.age);
+alert(user.isAdmin);
+/*	alert("hello!");
+}
+User();*/
+/*function User(){
+	alert(new.target);
+}
+User();
+new User();*/
+/*function BigUser(){
+	this.name="koushik";
+	return {name:"tony"};//returns an object
+
+}
+alert( new BigUser().name);*/
+/*	this.name="john";
+	return;
+}
+alert(new SmallUser().name);*/
+/*function User(name){
+	this.name=name;
+    //declaring a method
+	this.hi=function(){
+		alert("my name is : "+this.name);
+	};
+}
+let User= new User("tony");
+alert(User.name);*/
+/*function Calculater(){
+	this.read=function(){
+			this.a=+prompt('a?',0);
+			this.b=+prompt('b?',0);
+		};
+		this.sum=function(){
+			return this.a+this.b;
+		}
+		this.mul=function(){
+			return this.a*this.b;
+		};
+       }
+       let calculater= new  Calculater();
+       calculater.read();
+       alert("the sum :   "+calculater.sum());
+       alert("the multi: "+calculater.mul());*/
+       function Accumulater(startingvalue){
+       	    this.value=startingValue;    
+       	    this.read=function(){
+       	    this.value+=+prompt('how much to add?',0);
+       };
+   }
+   let accumulater= new Accumulater(1);
+      accumulater.read();
+      accumulater.read();
+      alert(accumulater.value);
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
