@@ -1,0 +1,255 @@
+<script>
+let arr=["my","name","is","tony"];
+delete arr[1];
+alert(arr);
+alert(arr.length);
+arr.splice(1,1);
+alert(arr);
+alert(arr.length);
+for(let i=0;i<arr.length;i++){
+	//arr+=arr[i];
+	alert(arr[i]);
+}
+alert(arr);
+arr.splice(0,3,"let s","dance");
+alert(arr);
+let removed=arr.slice(1,3);
+alert(removed);
+alert(arr);
+alert(arr.length);
+alert()
+alert(arr.splice(0,2));
+let removed=arr.splice(0,2);
+alert(removed);
+let array=["i","am","learning","javascript es6"];
+array.splice(2,0,"advanced");
+alert(array);
+let arr1=[1,2,3,4];
+arr1.splice(-1,0,3,4);
+alert(arr1);
+let arr1=[1,2,3,4]
+arr1.splice(-1,0,3,4);
+alert(arr1);
+let str="test";
+let arr1=str.split("");
+alert(arr1);
+alert(typeof(arr1));
+let arr1=["t","e","s","t"];
+alert(str.slice())
+alert(str.slice(-2));
+alert(arr1.reverse()); 
+alert(arr1.slice(-2));
+alert(arr1.concat([4,4]));
+let arr1=[1,2,3,4];
+alert(arr1.concat[5,6,7]);
+alert(arr1.concat[3,4],[8,14]);
+alert(arr1.concat[7,8],9,10);
+let arraylike={
+	name:"koushik",
+	[Symbol.isConcatSpreadable]: true,
+	age:27
+};
+
+alert(arr1.concat(arraylike));
+["india","germany","usa","uk"].forEach(alert);
+["india","germany","usa","uk"].forEach((item,index,array)=>{
+	alert(`${item} is at index ${index} in ${array}`);
+});
+["westbengal","odisha","andhra pradesh",""].forEach((item,index,array)=>{
+      alert(`${item} is at index ${index} in ${array}`);
+
+});
+alert(arr.indexOf(0));
+alert(arr.indexOf(-1));
+alert(arr.indexOf(false));
+alert(arr.indexOf(null));
+alert(arr.includes(1));
+const arr=[NaN];
+alert(arr.indexOf(NaN));
+alert(arr.includes(NaN));
+{id:1,name:"koushik"},
+{id:2,name:"tony"},
+{id:3,name:"stark"},
+{id:4,name:"james"}
+];
+let user=users.find(item=>item.id===1);
+let user1=users.find(users=>users.id===1);
+alert(`name of the user is: ${user1.name}`);
+const someUsers = users.filter(user => user.id < 3);
+alert(someUsers);
+const map1=num.map(i=>i*2);
+alert(map1);
+var roots = numbers.map(function(num) {
+return Math.sqrt(num)
+});
+let add=num.map(i=>i+4);
+alert(Math.sqrt(add));
+alert(add);
+let length=["india","usa","uk","germany"].map(item=>item.length);
+alert(length);
+num.sort();
+alert(num);
+[1,2,3,44].sort(function(a,b){
+	alert(a+"<>"+b);
+});*/
+/*let arr=[1,2,3,4]
+arr.sort(function(a,b){
+	return a+b;});
+alert(arr);
+//arr.sort((a,b)=>a+b);
+alert(arr);
+alert(arr.reverse());*/
+/let name="tony stark arnok".split(',',4);
+let arr=name.split(",");
+for(let name of arr){
+	alert(`a message to: ${name}`);
+}
+alert(arr);
+alert(name);
+let str="test";
+alert(str.split(';'));*/
+let arr=[1,2,3,4].reduce(function(accumulater,currentValue,currentIndex,array)){
+	return accumulator+currentValue;
+}
+alert(arr);
+/*let result=arr.reduce((sum,current)=>sum+current,0)
+let result1=arr.reduce((accumulater,currentValue)=>accumulater+currentValue);
+//alert(result);
+alert(result1);*/
+/*let arr=[0, 1, 2, 3, 4].reduce( (accumulator, currentValue, currentIndex, array) => accumulator + currentValue );
+alert(arr);*/
+/*var sum = [{x: 1}, {x: 2}, {x: 3}].reduce(function (accumulator, currentValue) {
+    return accumulator + currentValue.x;
+},initialValue)
+
+alert(sum);*/
+/*alert(typeof {});
+alert(typeof[]);
+alert(typeof(number));
+alert(typeof(integer));
+alert(Array.isArray({}));
+alert(Array.isArray([]));*/
+/*let arr=[0, 1, 2, 3, 4];
+let arr1=arr.slice(0);
+alert(arr1);*/
+/*let arr = [5, 3, 8, 1];
+
+let filtered = filterRange(arr, 1, 4);
+
+alert( filtered ); // 3,1 (matching values)
+
+alert( arr );*/
+/*let arr = [5, 3, 8, 1];
+filterRangeInPlace(arr,1,4);
+alert(arr);*/
+/*function copySorted(arr) {
+  return arr.slice().sort();
+}
+
+let arr = ["HTML", "JavaScript", "CSS"];
+
+let sorted = copySorted(arr);
+
+alert( sorted );
+alert( arr );*/
+/*let john = { name: "John", age: 25 };
+let pete = { name: "Pete", age: 30 };
+let mary = { name: "Mary", age: 28 };
+let users=["John","Pete","Mary"];
+let Name=users.map(item=>item.name);
+alert(Name);*/
+/*let john = { name: "John", surname: "Smith", id: 1 };
+let pete = { name: "Pete", surname: "Hunt", id: 2 };
+let mary = { name: "Mary", surname: "Key", id: 3 };
+let User = [ "john", "pete", "mary" ];
+let usermapped=User.map(user=>({
+fullname:`${User.name}${User.surname}`,
+id:User.id
+}));
+alert(usermapped[0].id);
+alert(usermapped[0].fullname);*/
+/*function sortage(arr){
+	arr.sort((a,b)=>a.age>b.age?a.age:-b.age);
+}
+let john = { name: "John", age: 28 };
+let pete = { name: "Pete", age: 30 };
+let mary = { name: "Mary", age: 25 };
+let arr = [ pete, john, mary ];
+sortage(arr);
+alert(arr[0].name);
+alert(arr[1].name);
+alert(arr[2].name);
+//alert(arr[3].name);*/
+/*let arr=[1,2,3,4];
+alert(shuffle(arr));*/
+ /*function shuffle(arr){
+ 	arr.sort(()=> Math.random()-0.5);
+ }
+ let arr=[1,2,3,4];
+ shuffle(arr);
+ alert(arr);*/
+ /*function getaverageage(arr){
+ 	 arr.reduce((prev,currentValue)=>prev+currentValue.age,0)/arr.length;
+ }
+
+let john = { name: "John", age: 25 };
+let pete = { name: "Pete", age: 30 };
+let mary = { name: "Mary", age: 29 };
+
+let user=["John","Pete","Mary"];
+alert(getaverageage(user));*/
+/*function getage(a,b,c){
+	 //user.reduce((prev,currentValue)=>prev+currentValue.age,0)/user.length;
+	 return a.age+b.age+c.age/3;
+}
+let john = { name: "John", age: 25 };
+let pete = { name: "Pete", age: 30 };
+let mary = { name: "Mary", age: 29 };
+let arr= ["John","Pete","Mary"];
+alert(getage(arr));*/
+function unique(arr){
+	let result=[];
+	for(let str of arr){
+	 	if(!result.includes(str))
+	 	{
+	 		result.push(str);
+	 	}
+	 }
+	 	
+	 	return result;
+	}
+	let string=["tony","arnok","hulk","tony","harry","harry"];
+	alert(unique(string));
+
+
+
+
+
+
+
+
+
+
+/*let arr = [5, 2, 1, -10, 8];
+arr.sort((a,b)=>a-b);
+alert(arr);*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+</script>
