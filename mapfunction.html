@@ -1,0 +1,90 @@
+<script>
+let map = new Map();
+
+map.set('1', 'str1');   // a string key
+map.set(1, 'num1');     // a numeric key
+map.set(true, 'bool1'); // a boolean key
+
+// remember the regular Object? it would convert keys to string
+// Map keeps the type, so these two are different:
+alert( map.get(1)   ); // 'num1'
+alert( map.get('1') ); // 'str1'
+
+alert( map.size ); 
+let visitsCountMap=new Map();
+visitsCountMap.set(john,1234);
+alert(visitsCountMap.get(john));
+
+let user=new Map();
+let visitCounts={};
+user.set(koushik,id:1234);
+visitCounts[user.id]=1234;
+alert(visitCounts[user.id]);
+alert(user.get(koushik));
+let map=new Map(Object.entries({
+    ['1','str1'],
+    ['1','num1'],
+    [true,'bool1']
+	}));
+alert(map);
+let map= new Map(Object.entries({
+    name:"koushik",
+    age:28
+
+}));
+alert(map.age);
+["arnok",27],
+["koushik",28],
+["tony",30],
+["captain",32]
+
+for(let name of user.keys()){
+	alert(name);
+}
+for(let age of user.values()){
+	alert(age);
+}
+for(let entry of user){
+	alert(entry);
+}
+user.forEach((value,key,map)=>{
+	alert(`${key}:${value}`);
+});
+let user={name:"tony"};
+let visitCount= new Map();
+visitCount.set(tony,1234);
+alert(visitCount.get(tony));
+alert(user);
+alert(visitCount);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
