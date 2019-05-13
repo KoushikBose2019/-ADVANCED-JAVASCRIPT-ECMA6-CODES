@@ -1,0 +1,26 @@
+<script>
+"use strict"
+let  set = new Set(['a','b','c','d','e']);  
+let iterator = set.entries(); 
+alert(iterator.next());
+
+let  set = new Set(['a','b','c','d','e']);  
+let iterator = set.keys(); 
+alert(iterator.next());
+
+var  set = new Set(['a','b','c','d','e']);  
+var iterator = set.values(); 
+console.log(iterator.next());
+
+var map = new Map([[1,'one'],[2,'two'],[3,'three']]); 
+var iterator = map.entries(); 
+alert(iterator.next());
+
+var map = new Map([[1,'one'],[2,'two'],[3,'three']]); 
+var iterator = map.values(); 
+alert(iterator.next());
+
+let map = new Map([[1,'one'],[2,'two'],[3,'three']]); 
+let iterator = map.keys(); 
+alert(iterator.next());     
+</script>
