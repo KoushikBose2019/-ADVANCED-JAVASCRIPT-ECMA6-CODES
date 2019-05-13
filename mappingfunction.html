@@ -1,0 +1,68 @@
+<script>
+"use strict" 
+let weakMap = new WeakMap(); 
+let obj = {}; 
+alert(weakMap.set(obj,"hello!"));
+alert(weakMap.has(obj));
+alert(weakMap.get(obj));
+alert(weakMap.size(obj));//size is not supported in weakMap. 
+for(let weak of obj)alert(weak);//iteration is supported in weakMap.
+alert(weakMap.entries(obj));//entries is not supported in weakMap.
+alert(weakMap.cleared(obj));//cleared is not supported in weakMap.
+alert(weakMap.keys());//key is not supported in weakMap.
+alert(weakMap.values());//values is not supported in weakMap.
+
+let visitsCountMap= new Map();
+visitsCountMap.set(user,1234);
+user==null;
+alert(visitsCountMap.size);
+alert(visitsCountMap.clear());
+alert(visitsCountMap.size);
+let user={name:"arnok"};
+let weakSet=new weakSet();
+weakSet.add(user);
+alert(user.size);
+alert(weakSet.has(user));
+alert(weakSet.delete(user));
+alert(weakSet.has(user));
+ let weakSet = new WeakSet();  
+ let obj = {msg:"hello"}; 
+ weakSet.add(obj); 
+ alert(weakSet.has(obj)); 
+ weakSet.delete(obj); 
+ alert(weakSet.has(obj));
+ let mess=[
+     { text:"hello",from:"arnok"},
+      {text:"how goes",from:"arnok"},
+      {text:"see you soon",from:"arnok"},
+];
+let unreadset= new WeakSet(mess);
+alert(unreadset);
+alert(unreadset.has(mess[1]));
+alert(unreadset.delete[1]);
+alert(unreadset.delete(mess[1]));
+alert(mess.shift());
+function anagram(arr){
+	let map= new Map();
+	for(let word of arr){
+		let sorted=word.toLowerCase().split('').sort().join('');
+		map.set(sorted,word);
+	}
+	return Array.from(map.values());
+} 	
+
+let arr=["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
+alert(anagram(arr));
+function  anagram(arr){
+let obj={};
+for(let i=0;i<arr.length;i++){
+let sorted=arr[i].toLowerCase().split('').sort().join('');
+    obj[sorted]=arr[i];
+	}
+	return Object.values(obj);
+}
+let arr=["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
+alert(anagram(arr));
+
+
+</script>
