@@ -1,0 +1,58 @@
+<script>
+
+let date= new Date();
+alert(date);
+let jan01_1990= new Date(0);
+alert(jan01_1990);
+let jan01_1994= new Date(24*3600*1000);
+alert(jan01_1994);
+alert(date.getTime());
+alert(new Date(2014,0,1,0,0,0,0));
+alert(new Date(2011,0,1));
+
+let date= new Date();
+alert(date.getHours());
+alert(date.getMinutes());
+alert(date.getUTCHours());
+alert(date.getTime());
+alert(new Date().getTimezoneOffset());
+date.setHours(0);
+alert(date);
+date.setHours(0,0,0,0);
+alert(date);
+
+let date= new Date();
+alert(date);
+let date= new Date(2016,1,28);
+date.setDate(date.getDate()+4);
+alert(date);
+let date= new Date();
+date.setSeconds(date.getSeconds() + 84);
+alert(date);
+let start= new Date();
+alert(date);
+for(let i=0;i<1000000;i++){
+	let doSomething=i*i;
+}
+let end=new Date();
+alert(`the loop tooks ${end-start}ms`);
+alert(date.getTime());
+let start= new Date();
+for(let i=0;i<100000;i++){
+	dosomething=i*i;
+}
+let end=Date.now();//it returns current date
+alert(`the loops tooks ${end-start}ms`);
+let ms = Date.parse('2012-01-26T13:51:50.417-07:00');
+alert(ms);
+let date = new Date( Date.parse('2012-01-26T13:51:50.417-07:00') );
+alert(date);
+
+let date= new Date();
+alert(date.getDay());
+alert(date);
+alert(date.now);
+alert(date.getMonth());
+alert(date.getYear());
+
+</script>
