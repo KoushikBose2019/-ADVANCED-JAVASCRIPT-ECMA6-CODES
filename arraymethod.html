@@ -91,15 +91,15 @@ num.sort();
 alert(num);
 [1,2,3,44].sort(function(a,b){
 	alert(a+"<>"+b);
-});*/
-/*let arr=[1,2,3,4]
+});
+let arr=[1,2,3,4]
 arr.sort(function(a,b){
 	return a+b;});
 alert(arr);
-//arr.sort((a,b)=>a+b);
+arr.sort((a,b)=>a+b);
 alert(arr);
-alert(arr.reverse());*/
-/let name="tony stark arnok".split(',',4);
+alert(arr.reverse());
+let name="tony stark arnok".split(',',4);
 let arr=name.split(",");
 for(let name of arr){
 	alert(`a message to: ${name}`);
@@ -112,37 +112,37 @@ let arr=[1,2,3,4].reduce(function(accumulater,currentValue,currentIndex,array)){
 	return accumulator+currentValue;
 }
 alert(arr);
-/*let result=arr.reduce((sum,current)=>sum+current,0)
+let result=arr.reduce((sum,current)=>sum+current,0)
 let result1=arr.reduce((accumulater,currentValue)=>accumulater+currentValue);
-//alert(result);
-alert(result1);*/
-/*let arr=[0, 1, 2, 3, 4].reduce( (accumulator, currentValue, currentIndex, array) => accumulator + currentValue );
-alert(arr);*/
-/*var sum = [{x: 1}, {x: 2}, {x: 3}].reduce(function (accumulator, currentValue) {
+alert(result);
+alert(result1);
+let arr=[0, 1, 2, 3, 4].reduce( (accumulator, currentValue, currentIndex, array) => accumulator + currentValue );
+alert(arr);
+var sum = [{x: 1}, {x: 2}, {x: 3}].reduce(function (accumulator, currentValue) {
     return accumulator + currentValue.x;
 },initialValue)
 
-alert(sum);*/
-/*alert(typeof {});
+alert(sum);
+alert(typeof {});
 alert(typeof[]);
 alert(typeof(number));
 alert(typeof(integer));
 alert(Array.isArray({}));
-alert(Array.isArray([]));*/
-/*let arr=[0, 1, 2, 3, 4];
+alert(Array.isArray([]));
+let arr=[0, 1, 2, 3, 4];
 let arr1=arr.slice(0);
-alert(arr1);*/
-/*let arr = [5, 3, 8, 1];
+alert(arr1);
+let arr = [5, 3, 8, 1];
 
 let filtered = filterRange(arr, 1, 4);
 
 alert( filtered ); // 3,1 (matching values)
 
-alert( arr );*/
-/*let arr = [5, 3, 8, 1];
+alert( arr );
+let arr = [5, 3, 8, 1];
 filterRangeInPlace(arr,1,4);
-alert(arr);*/
-/*function copySorted(arr) {
+alert(arr);
+function copySorted(arr) {
   return arr.slice().sort();
 }
 
@@ -151,14 +151,14 @@ let arr = ["HTML", "JavaScript", "CSS"];
 let sorted = copySorted(arr);
 
 alert( sorted );
-alert( arr );*/
-/*let john = { name: "John", age: 25 };
+alert( arr );
+let john = { name: "John", age: 25 };
 let pete = { name: "Pete", age: 30 };
 let mary = { name: "Mary", age: 28 };
 let users=["John","Pete","Mary"];
 let Name=users.map(item=>item.name);
-alert(Name);*/
-/*let john = { name: "John", surname: "Smith", id: 1 };
+alert(Name);
+let john = { name: "John", surname: "Smith", id: 1 };
 let pete = { name: "Pete", surname: "Hunt", id: 2 };
 let mary = { name: "Mary", surname: "Key", id: 3 };
 let User = [ "john", "pete", "mary" ];
@@ -167,8 +167,8 @@ fullname:`${User.name}${User.surname}`,
 id:User.id
 }));
 alert(usermapped[0].id);
-alert(usermapped[0].fullname);*/
-/*function sortage(arr){
+alert(usermapped[0].fullname);
+function sortage(arr){
 	arr.sort((a,b)=>a.age>b.age?a.age:-b.age);
 }
 let john = { name: "John", age: 28 };
@@ -179,16 +179,16 @@ sortage(arr);
 alert(arr[0].name);
 alert(arr[1].name);
 alert(arr[2].name);
-//alert(arr[3].name);*/
-/*let arr=[1,2,3,4];
-alert(shuffle(arr));*/
- /*function shuffle(arr){
+alert(arr[3].name);
+let arr=[1,2,3,4];
+alert(shuffle(arr));
+ function shuffle(arr){
  	arr.sort(()=> Math.random()-0.5);
  }
  let arr=[1,2,3,4];
  shuffle(arr);
  alert(arr);*/
- /*function getaverageage(arr){
+ function getaverageage(arr){
  	 arr.reduce((prev,currentValue)=>prev+currentValue.age,0)/arr.length;
  }
 
@@ -197,9 +197,9 @@ let pete = { name: "Pete", age: 30 };
 let mary = { name: "Mary", age: 29 };
 
 let user=["John","Pete","Mary"];
-alert(getaverageage(user));*/
-/*function getage(a,b,c){
-	 //user.reduce((prev,currentValue)=>prev+currentValue.age,0)/user.length;
+alert(getaverageage(user));
+function getage(a,b,c){
+	 user.reduce((prev,currentValue)=>prev+currentValue.age,0)/user.length;
 	 return a.age+b.age+c.age/3;
 }
 let john = { name: "John", age: 25 };
@@ -221,35 +221,8 @@ function unique(arr){
 	let string=["tony","arnok","hulk","tony","harry","harry"];
 	alert(unique(string));
 
-
-
-
-
-
-
-
-
-
-/*let arr = [5, 2, 1, -10, 8];
+let arr = [5, 2, 1, -10, 8];
 arr.sort((a,b)=>a-b);
-alert(arr);*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
-
-
-
-
+alert(arr);
 
 </script>
