@@ -1,0 +1,67 @@
+<script>
+//...rest operater it can take any number of arguments as a function argument	
+function sum(a,b){
+	return a+b;
+}
+alert(sum(2,4,6,8));//it will be not worked
+
+ function sumall(...args){
+ 	let sum=0;
+ 	for(let arg of args){
+ 		sum+=arg;
+		
+ 	}
+ 	return sum;
+ }
+ alert(sumall(1));
+ alert(sumall(1,2));
+ alert(sumall(1,2,3,4));
+ alert(sumall(1,2,3,4,5));
+ function show(firstname,lastname,...args){
+ 	alert(firstname+''+lastname);
+ 	alert(args[0]);
+ 	alert(args[1]);
+ 	alert(args[2]);
+ 	alert(args[3]);
+ 	alert(args.length);
+
+ }
+ alert(show("arnok","tony","stark","robert"));
+ //alert(title['germany','usa','france','uk']);
+ function showname(){
+ 	alert(arguments.length);
+ 	alert(arguments[0]);
+ 	alert(arguments[1]);
+ 	alert(arguments[2]);
+ 	alert(arguments[3]);
+ 	//its iterable
+ 	for(let args of arguments ) alert(args);
+
+ }
+ alert(showname("tony","stark","usa","germany"));
+
+alert(Math.max(4,5,7,8));
+let arr = [3, 5, 1];
+
+alert( Math.max(arr) ); // NaN
+/*And surely we can’t manually list items in the code Math.max(arr[0], arr[1], arr[2]), because we may be unsure how many there are. As our script executes, there could be a lot, or there could be none. And that would get ugly.
+
+Spread operator to the rescue! It looks similar to rest parameters, also using ..., but does quite the opposite.*/
+alert(Math.max(...arr));//this is called spread operater
+We can even combine the spread operator with normal values:
+let arr2 = [8, 3, -8, 1];
+alert(Math.max(...arr1 ,...arr2));
+let merged=[0,...arr,2,... arr2];
+alert(merged);//two array is merged
+let str="hello javascript es6!";
+arr1=str.split('');
+alert(arr1);
+alert(arr1.reverse(arr1));
+alert(arr1.join(arr1));
+arr2=[...str];//string to array conversion
+alert(arr2);
+alert(typeof arr2);
+//Array.from used to convert  both array-likes and iterables.
+alert(Array.from(str));//Array.from tends to be more universal.
+
+</script>
