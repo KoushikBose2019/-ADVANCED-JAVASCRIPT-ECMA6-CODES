@@ -1,0 +1,66 @@
+<script>
+function sayHi(){
+	alert("hello!!");
+}
+setTimeout(sayHi,1000);
+function sayHi(phrase,who){
+	alert(phrase+','+who);
+}
+setTimeout(sayHi,1000,"hello","Es6");
+setTimeout("alert('Hello!!')",1000);
+setTimeout(()=>alert('hello!!'),4000);
+let timeId=setTimeout(()=>alert("never happens!!"),1000);
+alert(timeId);
+clearTimeout(timeId);
+alert(timeId);
+let timeid=setInterval(()=>alert("hello!!"),4000);
+alert(timeid);
+after 5 seconds stop
+setTimeout(()=>{clearTimeout(timerId);alert('stop');},4000);
+let timeId=setTimeout(function tick(){
+	alert('click');
+	timeId=setTimeout('tick',1000);
+},2000);
+let i=1;
+setInterval(function(){
+	func(i);
+	//setInterval(run,100);
+},100);
+let i = 1;
+setTimeout(function run() {
+  func(i);
+  setTimeout(run, 100);
+}, 100);
+setTimeout(()=>alert("world!!");
+alert("hello!!");
+let i=0;
+let start= Date.now();
+function count(){
+	for(let j=0;j<1e9;j++){
+		i++;
+	}
+	let end=Date.now();
+	alert("Done in: "+(end-start)+'ms');
+}
+count();
+let i=0;
+let start=Date.now();
+function count(){
+	do{
+		i++;
+	}
+	while(i%1e10!=0);
+	if(i==1e10){
+	let end=Date.now();
+	alert("Done in: "+(end-start)+'ms');
+	}
+	else{
+		setTimeout(count);
+	}
+	
+	}
+
+count();
+
+
+</script>
